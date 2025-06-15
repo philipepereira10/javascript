@@ -5,11 +5,11 @@ var msg = document.getElementById("msg")
 var img = document.getElementById("imagem")
 var data = new Date()
 var hora = data.getHours()
+var min = data.getMinutes()
 
 
 
-
-msg.innerHTML = `Agora são exatamente ${hora} horas.`
+msg.innerHTML = `Agora são exatamente ${hora} horas e ${min} minutos.`
 
 if (hora >= 0 && hora < 12) {
     //Bom dia
