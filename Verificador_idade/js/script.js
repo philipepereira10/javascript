@@ -43,7 +43,7 @@ function verificar() {
                 img.setAttribute('src', 'images/adultom.png')
             } else  {
                 //Idoso
-                img.setAttribute('src', 'images/idosam.png')
+                img.setAttribute('src', 'images/    idosam.png')
             }
         }
 
