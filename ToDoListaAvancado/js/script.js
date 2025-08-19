@@ -11,9 +11,7 @@ const filterBtn = document.querySelector("#filter-select");
 
 let oldInputValue; // armazena o valor antigo ao editar uma tarefa
 
-// =========================
 // Funções principais
-// =========================
 
 // Cria e salva uma nova tarefa
 const saveTodo = (text, done = 0, save = 1) => {
@@ -127,9 +125,8 @@ const filterTodos = (filterValue) => {
   }
 };
 
-// =========================
 // Eventos
-// =========================
+
 
 // Adicionar tarefa
 todoForm.addEventListener("submit", (e) => {
@@ -188,9 +185,9 @@ editForm.addEventListener("submit", (e) => {
   toggleForms();
 });
 
-// 🔍 Pesquisa em tempo real
+// Pesquisa em tempo real
 searchInput.addEventListener("keyup", (e) => {
-  const search = e.target.value.toLowerCase(); // 🔥 garante minúsculas
+  const search = e.target.value.toLowerCase(); //  garante minúsculas
   getSearchedTodos(search);
 });
 
@@ -198,7 +195,7 @@ searchInput.addEventListener("keyup", (e) => {
 eraseBtn.addEventListener("click", (e) => {
   e.preventDefault();
   searchInput.value = "";
-  searchInput.dispatchEvent(new Event("keyup")); // 🔥 força mostrar todas novamente
+  searchInput.dispatchEvent(new Event("keyup")); //  força mostrar todas novamente
 });
 
 // Filtro de tarefas
@@ -207,9 +204,8 @@ filterBtn.addEventListener("change", (e) => {
   filterTodos(filterValue);
 });
 
-// =========================
+
 // Local Storage
-// =========================
 
 const getTodosLocalStorage = () => {
   const todos = JSON.parse(localStorage.getItem("todos")) || [];

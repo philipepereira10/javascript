@@ -16,4 +16,6 @@ Projetos com Javascript
  <a href="https://philipepereira10.github.io/javascript/todolistmed/index.html"> Executar To Do List (Médio) JS</a> 
 
  <a href="https://philipepereira10.github.io/javascript/ToDoListaAvancado/index.html"> Executar To Do List (Avançado) JS</a> 
+
+  <a href="https://philipepereira10.github.io/javascript/calculoIMC/index.html"> Executar Calculo de IMC JS</a> 
  
